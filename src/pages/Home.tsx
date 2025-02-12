@@ -1,6 +1,10 @@
 const Home = () => {
     return (
-        <div>Home</div>
+        <>
+            <div className="flex container mx-auto py-8 px-8">
+                <h1 className="text-3xl font-bold">Home Page</h1>
+            </div>
+        </>
     )
 }
 
