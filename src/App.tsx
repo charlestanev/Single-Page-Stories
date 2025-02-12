@@ -1,10 +1,22 @@
-import './App.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './pages/Home'
+import { About } from './pages/About'
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {
+    path: '/about',
+    element: <About />
+  },
+])
 
+const App = () => {
   return (
     <>
-      <h1 className='bg-red-600'>maikati deba</h1>
+      <RouterProvider router={router} />
     </>
   )
 }
