@@ -26,6 +26,16 @@ const Nav = () => {
                                 About
                             </NavLink>
                         </li>
+                        <li>
+                            <NavLink
+                                to="/blog"
+                                className={({ isActive }) => (
+                                    `hover:bg-pink-400 ${isActive ? 'text-blue-700 font-bold' : 'text-red-600'}`
+                                )}
+                            >
+                                Blog
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
             </nav>
