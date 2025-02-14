@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 const Nav = () => {
     return (
         <>
-            <nav className="w-full bg-gray-200">
-                <div className="container mx-auto py-4">
+            <nav className="w-full bg-gray-300 shadow-inner shadow-pink-600">
+                <div className="container py-4 mx-auto">
                     <ul className="flex gap-4 px-4">
                         <li>
                             <NavLink
