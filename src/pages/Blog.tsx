@@ -1,32 +1,11 @@
-import { useEffect } from "react"
 import { useParams } from "react-router-dom"
-
-const useDocumentHead = ({
-    title,
-    description
-}: {
-    title: string,
-    description: string
-}) => {
-    useEffect(() => {
-        document.title = title
-        if (description) {
-            let metaDescription = document.querySelector('meta[name="description"]');
-            if (!metaDescription) {
-                metaDescription = document.createElement('meta')
-                metaDescription.setAttribute('name', 'description')
-                document.head.appendChild(metaDescription)
-            }
-            metaDescription.setAttribute('content', description)
-        }
-    }, [title, description])
-}
+import { useDocumentHead } from "../hooks/useDocumentHead"
 
 const Blog = () => {
     const { category, id } = useParams()
 
     useDocumentHead({
-        title: 'My Page Title Deva',
+        title: 'My Page Title Deva 2.0',
         description: 'My Page Description'
     })
 
