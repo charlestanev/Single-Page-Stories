@@ -1,21 +1,20 @@
 import { useParams } from "react-router-dom"
-import { useDocumentHead } from "../hooks/useDocumentHead"
 
-const Blog = () => {
+// import { Helmet } from "react-helmet"
+
+const Blog = (post: any) => {
     const { category, id } = useParams()
 
-    useDocumentHead({
-        title: 'My Page Title Deva 2.0',
-        description: 'My Page Description'
-    })
+
 
     return (
         <>
-            <div className="flex flex-col">
-                <h1 className="flex">Blog</h1>
+            <article>
+
+                <h1 className="bg-red-600">Blog</h1>
                 <p className="flex">
                     {category} - {id}</p>
-            </div>
+            </article>
         </>
     )
 }

@@ -3,6 +3,8 @@ import Home from './pages/Home'
 import { About } from './pages/About'
 import Layout from './components/Layout'
 import Blog from './pages/Blog'
+import './index.css'
+
 
 const router = createBrowserRouter([
   {
